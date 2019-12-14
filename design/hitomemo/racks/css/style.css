@@ -38,15 +38,19 @@
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box; 
+  }
 
 html {
+  padding: 0;
+  margin: 0;
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
 
 @-ms-viewport {
   width: device-width; }
@@ -486,8 +490,8 @@ pre {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px; }
+  /* margin-right: -15px;
+  margin-left: -15px; */ }
 
 .no-gutters {
   margin-right: 0;
@@ -7507,7 +7511,7 @@ h1, h2, h3, h4, h5,
     background-repeat: no-repeat;
     background-position: center center;
     height: calc(100vh - 117px);
-    min-height: 800px;
+    min-height: 600px;
     position: relative; }
     .home-slider .slider-item .overlay {
       position: absolute;
@@ -7528,7 +7532,7 @@ h1, h2, h3, h4, h5,
     .home-slider .slider-item .slider-text {
       color: #fff;
       height: calc(100vh - 117px);
-      min-height: 500px; }
+      min-height: 600px; }
       .home-slider .slider-item .slider-text h1 {
         font-size: 52px;
         color: #fff;
@@ -7679,6 +7683,7 @@ h1, h2, h3, h4, h5,
 .ftco-degree-bg {
   position: relative; }
   .ftco-degree-bg:after {
+    margin: 0;
     content: '';
     position: absolute;
     left: 0;
@@ -8951,3 +8956,7 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+.hitomemo-pad-left-15 {
+  padding-left: 20px;
+}
